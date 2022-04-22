@@ -18,7 +18,9 @@ public class Union_find {
 		
 		int p1=find( x);
 		int p2= find( y );
-		
+		if( p1==p2 ){
+            return ;
+        }
 		if( s[p1]> s[p2] ) {
 			
 			root[p2]=root[p1];
